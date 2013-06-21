@@ -3,14 +3,14 @@
 (* Created by the Wolfram Workbench Jun 17, 2013 *)
 
 
-Print["Code requires Combinatorica package and shadows some functions Mathematica has reimplemented http://reference.wolfram.com/mathematica/Compatibility/tutorial/Combinatorica.html"]
+Print["Code requires Combinatorica package and shadows some functions Mathematica has reimplemented. The compatibility guide is located here -> http://reference.wolfram.com/mathematica/Compatibility/tutorial/Combinatorica.html"]
 (* Mathematica Package *)
 (*Uses Java Class MultiIndex *)
-Quiet[BeginPackage["MatPert`", { "JLink`", "NumericAMA`", "SymbolicAMA`"(*,"Combinatorica`"*)(*,"umbralCalculus`"*)}]]
+Quiet[BeginPackage["MatPert`", { "JLink`", "NumericAMA`", "SymbolicAMA`","Combinatorica`"}]]
 (* Exported symbols added here with SymbolName::usage *)  
 
 
-
+allLambda::usage-"allLambda[int,int]"
   
 
 theIndex::usage="theIndex[beta_List]"
